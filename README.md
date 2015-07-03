@@ -21,6 +21,7 @@ $ npm install co
 
 ## Examples
 ```
+var clsnap = require('clsnap');
 var siteCfg = {
 	"url": "http://example.com/forum.php?&orderby=dateline",
 	"list": "#forum table tbody:nth-last-child(-n+50)"
@@ -39,7 +40,7 @@ var pageInfo: {
 }
 
 
-fetchForum(siteCfg, rules, pageInfo).then(function(res){
+clsnap(siteCfg, rules, pageInfo).then(function(res){
 	console.log(res);
 }).catch(function(e){
 	console.log(e);
