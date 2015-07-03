@@ -1,0 +1,42 @@
+{
+  "name": "clsnap",
+  "description": "a spider of fourms",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yuyangvi/clsnap"
+  },
+  "version": "1.0.0",
+  "keywords": [
+    "spider",
+    "middleware",
+    "forum"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "istanbul-harmony": "0",
+    "koa": "0",
+    "mocha": "1",
+    "supertest": "0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "co": "4.0.0~",
+    "co-request": "*",
+    "cheerio": "*",
+    "iconv-lite": "*"
+  },
+  "scripts": {
+    "test": "mocha --harmony-generators --reporter spec",
+    "test-cov": "node --harmony-generators ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "test-travis": "node --harmony-generators ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly"
+  },
+  "readmeFilename": "Readme.md",
+  "bugs": {
+    "url": "https://github.com/yuyangvi/clsnap/issues"
+  },
+  "homepage": "https://github.com/yuyangvi/clsnap",
+  "_id": "clsnap@1.0.0",
+  "_from": "yuyangvi@"
+}
