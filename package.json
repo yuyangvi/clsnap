@@ -1,42 +1,31 @@
 {
   "name": "clsnap",
-  "description": "a spider of fourms",
+  "version": "1.0.0",
+  "description": "a spider of fourms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony-generators --reporter spec"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/yuyangvi/clsnap"
+    "url": "https://github.com/yuyangvi/clsnap.git"
   },
-  "version": "1.0.0",
   "keywords": [
     "spider",
     "middleware",
-    "forum"
+    "fourm"
   ],
-  "files": [
-    "index.js"
-  ],
-  "devDependencies": {
-    "istanbul-harmony": "0",
-    "koa": "0",
-    "mocha": "1",
-    "supertest": "0"
-  },
+  "author": "yuyangvi <yuyangvi@gmail.com> (https://github.com/yuyangvi)",
   "license": "MIT",
-  "dependencies": {
-    "co": "4.0.0~",
-    "co-request": "*",
-    "cheerio": "*",
-    "iconv-lite": "*"
-  },
-  "scripts": {
-    "test": "mocha --harmony-generators --reporter spec",
-    "test-cov": "node --harmony-generators ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
-    "test-travis": "node --harmony-generators ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly"
-  },
-  "readmeFilename": "Readme.md",
   "bugs": {
     "url": "https://github.com/yuyangvi/clsnap/issues"
   },
   "homepage": "https://github.com/yuyangvi/clsnap",
-  "_id": "clsnap@1.0.0",
-  "_from": "yuyangvi@"
+  "dependencies": {
+    "co": ">=4.0.0",
+    "co-request": "*",
+    "cheerio": "*",
+    "iconv-lite": "*"
+  },
+  "readmeFilename": "Readme.md"
 }
